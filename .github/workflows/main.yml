@@ -1,18 +1,21 @@
-name: Deploy to GitHub Pages
+
+name: Deploy HTML Site
+
 on:
   push:
     branches:
-      - main  # Change this to your branch name
+      - main  # Runs when code is pushed to main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Branch where the site will be published
-          folder: C:\Users\balaj\OneDrive\Desktop\HTML\WEB PROGRAMS
+          branch: gh-pages  # Target branch for deployment
+          folder: .  # Directory containing your HTML files
+
