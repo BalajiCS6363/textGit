@@ -15,4 +15,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branch where the site will be published
-          folder: web programs  # Replace with your HTML folder name
+          folder: C:\Users\balaj\OneDrive\Desktop\HTML\WEB PROGRAMS
